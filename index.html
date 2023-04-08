@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Depussay - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="main">
+        <header>
+            <div class="name">
+                <h1>Tom Depussay</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#about">A propos de moi</a></li>
+                    <li><a href="#projects">Mes projets</a></li>
+                    <li><a href="#skills">Mes compétences</a></li>
+                    <li><a href="#contact" class="btn">Me contacter</a></li>
+                </ul>
+            </div>
+            <div id="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+
+            <div class="menu-div" id="menu-div">
+                <div id="close-btn">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#about">A propos de moi</a></li>
+                    <li><a href="#projects">Mes projets</a></li>
+                    <li><a href="#skills">Mes compétences</a></li>
+                    <li><a href="#contact" class="btn">Me contacter</a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <div class="container" id="home">
+            <div class="content">
+                <p>Bonjour, je m'appelle</p><br>
+                <h2>Tom Depussay</h2>
+                <p>J'ai <span id="age">19</span> ans et je suis un développeur junior au lycée Saint Paul Bourdon Blanc à Orléans</p>
+
+                <div class="btn-box">
+                    <a href="#about" class="btn">A propos de moi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container" id="about">
+        <div class="content">
+            <div class="left">
+                <h2>A propos de moi</h2>
+                <p>
+                    Je m'appelle <span class="white-blue">Tom Depussay</span>, j'ai <span id="age">19</span> ans,
+                    je suis un jeune développeur en apprentissage. Je suis passionné par le développement web.
+                    Je suis actuellement en première année de BTS SIO (Services Informatiques aux Organisations)
+                    au <a href="https://www.stpaulbb.org" target="_blank" class="white-blue">lycée Saint Paul Bourdon Blanc</a> à Orléans. 
+                </p>
+            </div>
+            <div class="right">
+                <img src="img/tom.jpg" alt="Tom Depussay">
+            </div>
+        </div>
+    </div>
+
+    <div class="spacing"></div>
+
+    <div class="container" id="projects">
+        <div class="content">
+            <h2>Mes projets</h2>
+
+            <div class="card">
+                <div class="card-video">
+                    <a href="../typing/index.html" target="_blank">
+                        <video loop muted autoplay src="video/typing.mp4"></video>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <h3>Test de Dactylographie</h3>
+                    <p>
+                        Un site permettant de réaliser un test de dactylographie avec des mots pris 
+                        aléatoirement dans une liste, avec un système pour sauvegarder les scores des différentes 
+                        personnes et une page pour pouvoir afficher un tableau des meilleurs scores.
+                        <br>
+                        <span>
+                            HTML, CSS, JavaScript, PHP, MySQL
+                        </span>
+                    </p>
+                    <a target="_blank" href="https://github.com/tomdepussay/typing-test" class="btn">GitHub du projet</a>
+                    <a href="../typing/index.html" target="_blank" class="btn">Aller sur le site</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-video">
+                    <a href="../converters/index.html" target="_blank">
+                        <video loop muted autoplay src="video/converters.mp4"></video>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <h3>Conversion de base</h3>
+                    <p>
+                        Un site permettant de convertir un nombre d'un base à une autre (binaire, octal, décimal, hexadécimal).
+                        <br>
+                        <span>
+                            HTML, CSS, JavaScript
+                        </span>
+                    </p>
+                    <a target="_blank" href="https://github.com/tomdepussay/convertisseur" class="btn">GitHub du projet</a>
+                    <a href="../converters/index.html" target="_blank" class="btn">Aller sur le site</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-video">
+                    <a target="_blank" href="https://github.com/tomdepussay/demineur">
+                        <video loop muted autoplay src="video/demineur.mp4"></video>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <h3>Démineur</h3>
+                    <p>
+                        Un petit projet permettant de jouer au démineur sur un terminal.
+                        <br>
+                        <span>
+                            Java
+                        </span>
+                    </p>
+                    <a target="_blank" href="https://github.com/tomdepussay/demineur" class="btn">GitHub du projet</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-video">
+                    <a target="_blank" href="https://github.com/tomdepussay/demineur">
+                        <video loop muted autoplay src="video/portfolio.mp4"></video>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <h3>Portfolio</h3>
+                    <p>
+                        Mon Portfolio avec la liste de mes projets et mes compétences.
+                        <br>
+                        <span>
+                            HTML, CSS, JavaScript
+                        </span>
+                    </p>
+                    <a target="_blank" href="https://github.com/tomdepussay/demineur" class="btn">GitHub du projet</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="spacing-end"></div>
+
+    <div class="container" id="skills">
+        <div class="content">
+
+            <h2>Mes compétences</h2>
+
+            <div class="list-skills">
+
+                <a href="http://en.wikipedia.org/wiki/HTML" target="_blank">
+                    <div class="box-img">
+                        <img src="img/html.png" alt="HTML logo">
+                    </div>
+                    <div class="box-progress">
+                        <span style="color: white;">HTML</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%; background: #ff5722fe;"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
+                    <div class="box-img">
+                        <img src="img/css.png" alt="CSS logo">
+                    </div>
+                    <div class="box-progress">
+                        <span style="color: white;">CSS</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%; background: #214ce5fe;"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">
+                    <div class="box-img">
+                        <img src="img/javascript.png" alt="JavaScript logo">
+                    </div>
+                    <div class="box-progress">
+                        <span style="color: black;">JavaScript</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%; background: rgba(240, 219, 79, 255);"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.php.net" target="_blank">
+                    <div class="box-img">
+                        <img src="img/php.png" alt="PHP logo">
+                    </div>
+                    <div class="box-progress">
+                        <span style="color: black;">PHP</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%; background: rgba(139, 156, 208, 255);"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.mysql.com/fr/" target="_blank">
+                    <div class="box-img">
+                        <img src="img/mysql.png" alt="MYSQL logo">
+                    </div>
+                    <div class="box-progress">
+                        <span style="color: white;">MySQL</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%; background: rgba(0, 97, 139, 255);"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.python.org" target="_blank">
+                    <div class="box-img">
+                        <img src="img/python.png" alt="CSS logo">
+                    </div>
+                    <div class="box-progress">
+                        <span style="color: rgba(50, 112, 161, 255);">Python</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%; background: rgba(255, 228, 102, 255);"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.java.com/fr/" target="_blank">
+                    <div class="box-img">
+                        <img src="img/java.png" alt="Java logo">
+                    </div>
+                    <div class="box-progress">
+                        <span style="color: white;">Java</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%; background: rgba(237, 33, 37, 255);"></div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="spacing" id="spacing-contact"></div>
+
+    <div class="container" id="contact">
+        <div class="content">
+
+            <h2>Me contacter</h2>
+
+            <div class="list">
+                
+                <div class="link">
+                    <div class="box-img">
+                        <img src="img/gmail.png" alt="Gmail Logo">
+                    </div>
+                    <span>depussay.tom1@gmail.com</span>
+                </div>
+
+                <a href="https://www.linkedin.com/in/tom-depussay-a58382238/" target="_blank">
+                    <div class="box-img">
+                        <img src="img/linkedln.png" alt="LinkedIn Logo">
+                    </div>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/tomdepussay" target="_blank">
+                    <div class="box-img">
+                        <img src="img/github.png" alt="GitHub Logo">
+                    </div>
+                    <span>GitHub</span>
+                </a>
+
+                <div class="link">
+                    <div class="box-img">
+                        <img src="img/discord.png" alt="Discord Logo">
+                    </div>
+                    <span>Playxids#3030</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="spacing-end" id="spacing-end-contact"></div>
+
+    <footer>
+        <div class="content">
+            <div class="left">
+                <p>© 2021 Tom Depussay</p>
+            </div>
+            <div class="right">
+                <p>Site réalisé par Tom Depussay</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,805 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --blue: #56dcfc;
+    --blue-deep: #015eff;
+    --white: #ededed;
+    --blue-deep2: rgb(10, 50, 92);
+    color: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--white);
+}
+
+.main {
+    height: 100vh;
+    background: rgb(0,0,126);
+    background: radial-gradient(circle, rgba(0,0,126,1) 0%, rgba(0,0,36,1) 87%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+header .name {
+    font-size: 1rem;
+    margin-left: 3rem;
+}
+
+header #menu-btn {
+    display: none;
+    width: 10%;
+    margin-right: 3rem;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+header .menu-div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--blue-deep2);
+    width: 50%;
+    height: 100vh;
+    z-index: 100;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.7) -10px 0px 30px;
+}
+
+header .menu-div #close-btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+header .menu-div ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+
+header .menu-div ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+header .menu-div ul li {
+    margin: 1rem 0;
+}
+
+header .menu {
+    width: 70%;
+    margin-right: 3rem;
+}
+
+header .menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    border: solid 2px var(--blue);
+    color: var(--blue);
+    border-radius: 20em;
+}
+
+.container {
+    height: 90vh;
+    width: 100%;
+}
+
+#home {
+    height: 90vh;
+}
+
+#home .content {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home .content p {
+    font-size: 2rem;
+    width: 70%;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+#home .content h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--blue);
+    letter-spacing: 3px;
+}
+
+.btn-box {
+    margin-top: 3rem;
+}
+
+#about {
+    height: 90vh;
+    background: var(--white);
+}
+
+#about .content {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: black;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#about .content p,
+#about .content span {
+    margin-top: 2em;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#about .content .white-blue {
+    color: var(--blue-deep);
+    text-decoration: none;
+}
+
+#about .content .left {
+    width: 50%;
+    float: left;
+}
+
+#about .content .right {
+    width: 50%;
+    float: right;
+}
+
+#about .content .right img {
+    display: flex;
+    margin: auto;
+    border-radius: 100%;
+    width: 400px;
+}
+
+.spacing {
+    height: 200px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1800' height='200' preserveAspectRatio='none' viewBox='0 0 1800 200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1114%26quot%3b)' fill='none'%3e%3crect width='1800' height='200' x='0' y='0' fill='rgba(237%2c 237%2c 237%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c76 C 120%2c87 360%2c137.4 600%2c131 C 840%2c124.6 960%2c35.8 1200%2c44 C 1440%2c52.2 1680%2c146.4 1800%2c172L1800 200L0 200z' fill='rgba(10%2c 50%2c 92%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1114'%3e%3crect width='1800' height='200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.spacing-end {
+    height: 200px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1800' height='200' preserveAspectRatio='none' viewBox='0 0 1800 200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1114%26quot%3b)' fill='none'%3e%3crect width='1800' height='200' x='0' y='0' fill='rgba(237%2c 237%2c 237%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c76 C 120%2c87 360%2c137.4 600%2c131 C 840%2c124.6 960%2c35.8 1200%2c44 C 1440%2c52.2 1680%2c146.4 1800%2c172L1800 200L0 200z' fill='rgba(10%2c 50%2c 92%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1114'%3e%3crect width='1800' height='200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+#spacing-contact {
+    transform: scaleX(-1);
+}
+
+#spacing-end-contact {
+    transform: scaleX(-1);
+    transform: rotate(180deg);
+}
+
+#projects {
+    background: var(--blue-deep2);
+    height: auto;
+}
+
+#projects .content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+#projects .content h2 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.card {
+    border-radius: 10px;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-video {
+    width: 50%;
+    border-radius: 20px;
+    order: 2;
+}
+
+.card .card-video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card .card-content {
+    width: 50%;
+    padding: 2em;
+    order: 1;
+}
+
+.card .card-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card .card-content p {
+    padding: 1em;
+    background: rgb(12, 54, 100);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: rgb(191, 182, 216);
+}
+
+.card .card-content p span {
+    color: var(--blue);
+    display: block;
+    margin-top: 10px;
+}
+
+.card .card-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2em;
+    width: 300px;
+}
+
+.card .card-content .btn-little a {
+    font-size: 1.5rem;
+}
+
+.card:nth-child(odd) .card-video {
+    order: 2;
+}
+
+.card:nth-child(odd) .card-content {
+    order: 1;
+}
+
+.card:nth-child(even) .card-video {
+    order: 1;
+}
+
+.card:nth-child(even)    .card-content {
+    order: 2;
+}
+
+#skills {
+    padding-top: 5em;
+    background: var(--white);
+    height: auto;
+    padding-bottom: 7em;
+}
+
+#skills .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .content h2 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
+}
+
+.list-skills {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list-skills a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-skills a:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.list-skills a .box-img {
+    height: 150px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.list-skills a .box-img img {
+    width: 150px;
+}
+
+.box-progress {
+    margin-left: 3em;
+    width: 70%;
+    height: 50px;
+    background: #e5e5e5;
+    border-radius: 20px;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.list-skills a .box-progress span {
+    text-decoration: none;
+    margin-left: 1em;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 3;
+}
+
+.list-skills a .box-progress .progress {
+    width: 100%;
+    height: 100%;
+    background: #e5e5e5;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.list-skills a .box-progress .progress .progress-bar {
+    height: 100%;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.list {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #e5e5e5;
+    padding: 3em;
+    padding-bottom: 0;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 4em;
+    text-decoration: none;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 4em;
+    text-decoration: none;
+}
+
+.list a .box-img img {
+    width: 150px;
+}
+
+.link .box-img img {
+    width: 150px;
+}
+
+.list a .box-img {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link .box-img {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list a span {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 1em;
+}
+
+.link span {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 1em;
+}
+
+#contact {
+    background: var(--blue-deep2);
+    height: auto;
+}
+
+#contact .content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+#contact .content h2 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+footer {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .content p, footer .content span {
+    color: black;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    header .menu ul li a {
+        font-size: 1em;
+        padding: 5px 10px;
+    }
+
+    header .name {
+        font-size: 0.8rem;
+    }
+
+    #about {
+        height: 100vh;
+    }
+
+    #about .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .content .left {
+        width: 100%;
+        float: none;
+    }
+
+    #about .content .right {
+        width: 100%;
+        float: none;
+    }
+
+    #about .content .right img {
+        width: 300px;
+        margin-top: 5%;
+    }   
+
+    .card .card-content p {
+        font-size: 1.2rem;
+    }
+
+    .card .card-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .list {
+        width: 90%;
+    }
+
+    .list a {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .list-skills {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 920px){
+    header .menu {
+        display: none;
+    }
+
+    header #menu-btn {
+        display: block;
+    }
+
+    .card {
+        margin-top: 2em;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card .card-video {
+        width: 100%;
+        order: 1 !important;
+    }
+
+    .card .card-video video {
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+
+    .card .card-content {
+        width: 100%;
+        order: 2 !important;
+        position: absolute;
+        z-index: 1;
+        background: transparent;
+        padding: 0;
+    }
+
+    .card .card-content h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: white;
+    }
+
+    .card .card-content p {
+        background: transparent;
+        box-shadow: none;
+        color: white;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card .card-content p span {
+        color: white;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .card .card-content a {
+        display: none;
+    }
+
+    #skills .content h2 {
+        font-size: 2.5rem;
+    }
+
+    .list a {
+        margin-bottom: 2em;
+    }
+
+    .link {
+        margin-bottom: 2em;
+    }
+
+    .list a .box-img img {
+        width: 100px;
+    }
+
+    .link .box-img img {
+        width: 100px;
+    }
+
+    .list a .box-img {
+        height: 100px;
+    }
+
+    .link .box-img {
+        height: 100px;
+    }
+
+    #contact .content h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #home .content p {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    #home .content h2 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .btn-box {
+        text-align: center;
+    }
+
+    #home .content {
+        width: 90%;
+    }
+
+    #about {
+        padding-top: 5em;
+        height: auto;
+    }
+
+    #about .content .right img {
+        margin-top: 5%;
+        width: 200px;
+    }
+
+    .card .card-content p {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .card .card-content h3 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .card .card-content a {
+        margin-top: 0;
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .link span {
+        font-size: 1rem;
+    }
+
+    .list a span {
+        font-size: 1rem;
+    }
+
+    #menu-div {
+        width: 80vw;
+    }
+
+    footer .content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .content p, footer .content span {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .list-skills a .box-img, .list-skills a .box-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .list-skills a .box-progress {
+        height: 40px;
+    }
+
+    .list-skills a .box-progress span {
+        font-size: 1rem;
+    }
+
+    #skills .content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .card .card-content p {
+        font-size: 0.6rem;
+        width: 80%;
+    }
+
+    .card .card-content h3 {
+        font-size: 1rem;
+    }
+
+    .card .card-content a {
+        width: 150px;
+        font-size: 0.6rem;
+    }
+
+    #menu-div {
+        width: 90vw;
+    }
+
+    .list-skills a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-skills a .box-progress {
+        width: 90%;
+        margin-left: 0;
+    }
+}
